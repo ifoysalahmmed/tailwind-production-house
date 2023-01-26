@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              black: "#131313",
+              yellow: "#FECC02",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Film Production</title>
+  </head>
+
+  <body>
+    <!-- header start -->
+
+    <header>
+      <!-- navbar start -->
+
+      <nav class="bg-white fixed top-0 right-0 left-0">
+        <div
+          class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas px-5"
+        >
+          <h1 class="text-2xl">jhaka naka production</h1>
+          <ul class="flex gap-8 text-lg">
+            <li>About us</li>
+            <li>Our Movies</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- navbar end -->
+
+      <!-- banner section start -->
+
+      <section
+        class="bg-red-400 h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover"
+      >
+        <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+          <div class="font-bebas">
+            <h2 class="text-white text-lg">Movie production studio</h2>
+            <h1 class="text-white text-7xl">Films made to</h1>
+            <h1 class="text-yellow text-7xl">Perfection</h1>
+            <p class="font-montserrat text-white max-w-lg mb-12">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <button
+              class="text-white border-2 border-white py-4 px-6 text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all"
+            >
+              discover more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section end -->
+    </header>
+
+    <!-- header end -->
+  </body>
+</html>
